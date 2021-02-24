@@ -12,6 +12,7 @@
 Looking for the ideal Airbnb may be daunting for travellers and hosts, especially not knowing what factors come into play. By understanding the host-customer relationship one may determine the important factors that contribute to the decision making process for the housing.
 
 ## Summary 
+By analyzing the correlation between price and various external factors (ie reviews, room type, region, time of season, host rating, occupancy rate) and the profitability for hosts (through review metrics, price, number of listings per host, estimated occupancy, etc.), a better understanding of host-customer relationship can be drawn.
 
 ## Methodology
 
@@ -25,6 +26,7 @@ The data obtained can be found in the following links:
 Airbnb Datasets are created by Airbnb, an online marketplace company that connects people who want to rent out their homes with people who are looking for accommodation in that locale. Airbnb Datasets contain a lot of different csv files during different time periods. They record the price, room type, occupancy rate, host rating, location of room, etc. By analyzing Airbnb Datasets, we can find some relationship between those factors. 
 
 ## Applications
+Cross-correlate to ultimately determine the best Airbnb in San Diego. From the host side, they’ll have an example for how to improve their listings while the travelers find their ideal vacation spot. 
 
 ## File Structure
 
