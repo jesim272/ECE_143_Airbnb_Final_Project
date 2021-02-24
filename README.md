@@ -2,7 +2,7 @@
 
 ## Team Members 
 * Ahnaf Ahmed 
-* Kevin Hau 
+* [Kevin Hau]() (kevin.hau19@gmail.com) 
 * [Jesi Miranda-Santos](https://github.com/jesim272) (jesim272@gmail.com)
 * Xibo Zhang
 * [Zhizuo Zhang](https://github.com/MachineryZ "Zhizuo Zhang") (zhizuozhang@gmail.com)
