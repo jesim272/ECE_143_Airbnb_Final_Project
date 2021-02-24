@@ -15,6 +15,10 @@ Looking for the ideal Airbnb may be daunting for travellers and hosts, especiall
 By analyzing the correlation between price and various external factors (ie reviews, room type, region, time of season, host rating, occupancy rate) and the profitability for hosts (through review metrics, price, number of listings per host, estimated occupancy, etc.), a better understanding of host-customer relationship was drawn.
 
 ## Methodology
+1. Part 1
+2. Part 2
+3. Part 3
+4. Part 4
 
 ## Dataset 
 The data obtained can be found in the following links:
