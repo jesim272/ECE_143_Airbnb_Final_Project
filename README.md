@@ -3,9 +3,9 @@
 ## Team Members 
 * Ahnaf Ahmed 
 * Kevin Hau 
-* Jesi Miranda-Santos (@jesim272)
+* [Jesi Miranda-Santos](https://github.com/jesim272) (jesim272@gmail.com)
 * Xibo Zhang
-* Zhizuo Zhang (@MachineryZ)
+* [Zhizuo Zhang](https://github.com/MachineryZ "Zhizuo Zhang") (zhizuozhang@gmail.com)
 
 ## Problem 
 
@@ -14,7 +14,7 @@
 ## Methodology
 
 ## Dataset 
-[Airbnb Data](http://insideairbnb.com/get-the-data.html "Airbnb Data title")
+[Airbnb Data](http://insideairbnb.com/get-the-data.html "Airbnb Data")
 
 ## Applications
 
