@@ -22,7 +22,7 @@ The data obtained can be found in the following links:
 
 * Airbnb San Diego Dataset ([download](http://data.insideairbnb.com/united-states/ca/san-diego/2021-01-23/visualisations/listings.csv "Airbnb San Diego Dataset") )
 
-
+Airbnb Datasets are created by Airbnb, an online marketplace company that connects people who want to rent out their homes with people who are looking for accommodation in that locale. Airbnb Datasets contain a lot of different csv files during different time periods. They record the price, room type, occupancy rate, host rating, location of room, etc. By analyzing Airbnb Datasets, we can find some relationship between those factors. 
 
 ## Applications
 
