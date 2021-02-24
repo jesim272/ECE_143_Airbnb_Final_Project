@@ -14,7 +14,9 @@
 ## Methodology
 
 ## Dataset 
-[Airbnb Data](http://insideairbnb.com/get-the-data.html "Airbnb Data")
+[Airbnb Data Pool](http://insideairbnb.com/get-the-data.html "Airbnb Data Pool")
+
+Airbnb San Diego Dataset ([download](http://data.insideairbnb.com/united-states/ca/san-diego/2021-01-23/visualisations/listings.csv "Airbnb San Diego Dataset") )
 
 ## Applications
 
