@@ -9,14 +9,20 @@
 
 ## Problem 
 
+Looking for the ideal Airbnb may be daunting for travellers and hosts, especially not knowing what factors come into play. By understanding the host-customer relationship one may determine the important factors that contribute to the decision making process for the housing.
+
 ## Summary 
 
 ## Methodology
 
 ## Dataset 
-[Airbnb Data Pool](http://insideairbnb.com/get-the-data.html "Airbnb Data Pool")
+The data obtained can be found in the following links:
 
-Airbnb San Diego Dataset ([download](http://data.insideairbnb.com/united-states/ca/san-diego/2021-01-23/visualisations/listings.csv "Airbnb San Diego Dataset") )
+* [Airbnb Data Pool](http://insideairbnb.com/get-the-data.html "Airbnb Data Pool")
+
+* Airbnb San Diego Dataset ([download](http://data.insideairbnb.com/united-states/ca/san-diego/2021-01-23/visualisations/listings.csv "Airbnb San Diego Dataset") )
+
+
 
 ## Applications
 
