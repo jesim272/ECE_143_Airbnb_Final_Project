@@ -34,6 +34,17 @@ Cross-correlate to ultimately determine the best Airbnb in San Diego. From the h
 * Python version: Python 3.6.8 64-bit and above
 ### Required Packages
 
+For installing these packages, you can use either ```pip3``` to install packages. For example,
+
+``` pip3 install numpy ```
+
+1. numpy
+2. pandas
+3. matplotlib
+4. seaborn
+5. plotly
+ 
+
 ### Running The Code
 
 
