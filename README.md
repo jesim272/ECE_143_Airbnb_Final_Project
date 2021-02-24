@@ -21,7 +21,7 @@ By analyzing the correlation between price and various external factors (ie revi
 
 3. Graphed the number of minimum nights from mid 2015 to early 2020 of a shared room, hotel room, entire home/apt, private room, and average number of days to have a better sense of how many days hosts are willing to provide their space to traveling customers. 
 
-4. f
+4. Analyzed the relationship between the price ranges and the locations of the available spot. We  
 
 ## Dataset 
 The data obtained can be found in the following links:
