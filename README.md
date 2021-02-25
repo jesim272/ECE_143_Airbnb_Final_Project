@@ -1,7 +1,7 @@
 # Data Analytics of Best Airbnb’s in San Diego (Team 13)
 
 ## Team Members 
-* Ahnaf Ahmed 
+* [Ahnaf Ahmed](https://github.com/AhnafAhmed97) (ahnafahmed97@gmail.com)
 * [Kevin Hau](https://github.com/pandadrago1) (kevin.hau19@gmail.com) 
 * [Jesi Miranda-Santos](https://github.com/jesim272) (jesim272@gmail.com)
 * Xibo Zhang
@@ -49,7 +49,7 @@ For installing these packages, you can use either ```pip3``` to install packages
 
 ``` pip3 install numpy ```
 
-or you can uses the Anaconda Comman Prompt and use the following: 
+or you can uses the Anaconda Command Prompt and use the following: 
 
 ``` conda install -c conda-forge [name of package] ```
 
@@ -63,5 +63,7 @@ or you can uses the Anaconda Comman Prompt and use the following:
 
 ### Running The Code
 
+Download this github repository and open the Group13_Project_2 in Juptyer Notebook or in VS code.
+Make sure you have all the packages downloaded and you can run each line
 
  
