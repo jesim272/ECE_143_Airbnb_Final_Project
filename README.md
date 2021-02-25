@@ -25,7 +25,7 @@ By analyzing the correlation between price and various external factors (ie revi
 
 5. Created a map of San Diego area and plotted points for the number of available places and 
 for the minumum number of nights. This allowed for a visual cluster of hot spots for the most 
-available Airbnb.
+available Airbnb hostings.
 
 ## Dataset 
 The data obtained can be found in the following links:
