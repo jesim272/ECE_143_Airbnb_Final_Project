@@ -49,6 +49,10 @@ For installing these packages, you can use either ```pip3``` to install packages
 
 ``` pip3 install numpy ```
 
+or you can uses the Anaconda Comman Prompt and use the following: 
+
+``` conda install -c conda-forge [name of package] ```
+
 1. numpy
 2. pandas
 3. matplotlib
