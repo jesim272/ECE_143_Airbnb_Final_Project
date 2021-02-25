@@ -54,6 +54,7 @@ For installing these packages, you can use either ```pip3``` to install packages
 3. matplotlib
 4. seaborn
 5. plotly
+6. folium
  
 
 ### Running The Code
