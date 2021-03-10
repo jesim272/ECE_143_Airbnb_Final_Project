@@ -40,7 +40,24 @@ Airbnb Datasets are created by Airbnb, an online marketplace company that connec
 Cross-correlate to ultimately determine the best Airbnb in San Diego. From the host side, they’ll have an example for how to improve their listings while the travelers find their ideal vacation spot. 
 
 ## File Structure
-
+```
+ECE_143_Airbnb_Final_Project/
+    Group13_Project_2.ipynb
+    listing_data/
+        .DS_Store
+        listings_Apr_14_2018.csv
+        listings_Apr_15_2019.csv
+        listings_Apr_22_2020.csv
+        ...
+    presentation_photos/
+        2020_coast_heatmap.PNG
+        2020_downtown_heatmap.PNG
+        2015_San_Diego_heatmap.PNG
+        ...
+    Cleaning_data/
+        clean_data.py
+       
+```
 ## The Code
 * Python version: Python 3.6.8 64-bit and above
 ### Required Packages
