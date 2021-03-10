@@ -77,7 +77,7 @@ or you can uses the Anaconda Command Prompt and use the following:
 5. plotly
 6. folium
  
-
+```NOTE: If using VS Code and both methods above yield errors, open the terminal on VS Code and pip install the packages```
 ### Running The Code
 
 Download this github repository and open the Group13_Project_2 in Juptyer Notebook or in VS code.
