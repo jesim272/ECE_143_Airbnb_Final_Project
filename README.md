@@ -37,8 +37,10 @@ The data obtained can be found in the following links (look for San Diego):
 
 Airbnb Datasets are created by Airbnb, an online marketplace company that connects people who want to rent out their homes with people who are looking for accommodation in that locale. Airbnb Datasets contain a lot of different csv files during different time periods. They record the price, room type, occupancy rate, host rating, location of room, etc. By analyzing Airbnb Datasets, we can find some relationship between those factors. 
 
+Looking at San Deigo Airbnb data, the site includes listing data for various months over the past years, which is all placed under the ```./listing_data``` for easier viewing and analsis.
+
 ## Applications
-Cross-correlate to ultimately determine if becoming a host is wise, and if so, how to improve their listings to attract travellers.
+Cross-correlate to ultimately determine if becoming a host is wise, and if so, how to improve their listings to attract travellers. Addionally, if one is deciding to become a host, how wise is to invest and become a host given prior years' data and the changes in density in certain regions to-date.
 
 ## File Structure
 ```
@@ -92,10 +94,16 @@ or you can uses the Anaconda Command Prompt and use the following:
 5. plotly
 6. folium
  
-```NOTE: If using VS Code and both methods above yield errors, open the terminal on VS Code and pip install the packages```
+```NOTE: If using VS Code and both methods above yield errors such as "module not found", open the terminal on VS Code and pip install the packages one the terminal```
 ### Running The Code
 
 Download this github repository and open the Group13_Project_2 in Juptyer Notebook or in VS code.
-Make sure you have all the packages downloaded and you can run each line
+Make sure you have all the packages downloaded.
+If running the Jupyter Notebook code, you may run each line
+If you are using the main.py file, you can just run the code itself by doing the following:
+```
+python main.py
+```
+The main.py will execute and display all the plots we generated. There is no difference in terms of output for the two files.
 
  
