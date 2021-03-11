@@ -100,6 +100,7 @@ or you can uses the Anaconda Command Prompt and use the following:
 Download this github repository and open the Group13_Project_2 in Juptyer Notebook or in VS code.
 Make sure you have all the packages downloaded.
 If running the Jupyter Notebook code, you may run each line.
+
 If one wants to use Jupyter Notebook within VS Code, please follow this link to create an environment:
 
 [https://code.visualstudio.com/docs/python/jupyter-support](https://code.visualstudio.com/docs/python/jupyter-support)
