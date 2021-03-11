@@ -42,7 +42,9 @@ Cross-correlate to ultimately determine if becoming a host is wise, and if so, h
 
 ## File Structure
 ```
-ECE_143_Airbnb_Final_Project/
+Group13_Project_2.ipynb
+    main.py
+    README.md
     Group13_Project_2.ipynb
     listing_data/
         .DS_Store
@@ -50,13 +52,25 @@ ECE_143_Airbnb_Final_Project/
         listings_Apr_15_2019.csv
         listings_Apr_22_2020.csv
         ...
+        
     presentation_photos/
         2020_coast_heatmap.PNG
         2020_downtown_heatmap.PNG
         2015_San_Diego_heatmap.PNG
         ...
+    
     Cleaning_data/
         clean_data.py
+       
+    Get_file_structure/
+        structure.py
+   
+    Maps/
+        heat_maps.py
+        charts.py
+        
+    Plots/
+        line_plots.py
        
 ```
 ## The Code
