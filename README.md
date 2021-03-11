@@ -9,7 +9,7 @@
 
 ## Problem 
 
-Looking for the ideal Airbnb may be daunting for travellers, especially not knowing what factors come into play and if the airbnb is relatively close to where they want to visit. By understanding the host data for listing, one can make a decision whether or not it would be wise to become a host.
+Looking for the ideal Airbnb may be daunting for travellers, especially not knowing what factors come into play and if the airbnb is relatively close to where they want to visit. By understanding the host data for listing, one can make a decision whether or not it would be wise to become a host in a particular area. If one would like to become a host, which regions in San Diego are ideal for making an extra income? 
 
 ## Summary 
 By analyzing the correlation between price and various external factors (ie reviews, room type, region, time of season, host rating, occupancy rate) and the profitability for hosts (through review metrics, price, number of listings per host, estimated occupancy, etc.), a better understanding of host-customer relationship was drawn. Additionally, the external factors helped identify which regions it would be wise to be a host in.
