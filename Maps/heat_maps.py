@@ -9,11 +9,17 @@ import folium
 from folium.plugins import HeatMap
 
 def create_location_map(path_name):
+    '''
+    Create a map framework to work with
+    '''
     map_data = pd.read_csv(map_data_path)
     print(map_data['latitude'].min(), map_data['latitude'].max(), map_data['longitude'].min(), map_data['longitude'].max())
     return map_data
 
 def view_entire_location(map_data):
+    '''
+    Create a map that shows all the locations available in the data
+    '''
     # define the world map
     world_map = folium.Map()
 
@@ -41,6 +47,10 @@ def view_entire_location(map_data):
     return data,token
 
 def cheap_location_price(data, token):
+    '''
+    Create a map that shows all the locations available in the data
+    that are less than $300
+    '''
     price_data = data[data.price < 300]
     fig = px.scatter_mapbox(price_data,
                         lon = 'longitude',
@@ -54,6 +64,10 @@ def cheap_location_price(data, token):
                     margin = {'l' : 0, 'r' : 0, 't' : 0, 'b' : 0})
 
 def median_location_price(data,token):
+    '''
+    Create a map that shows all the locations available in the data
+    that is between $300 and $1000
+    '''
     price_data = data[data.price > 300]
     price_data = price_data[price_data.price < 1000]
     fig = px.scatter_mapbox(price_data,
@@ -68,6 +82,10 @@ def median_location_price(data,token):
                     margin = {'l' : 0, 'r' : 0, 't' : 0, 'b' : 0})
 
 def luxury_location_price(data,token):
+    '''
+    Create a map that shows all the locations available in the data
+    that is greater than $1000
+    '''
     price_data = data[data.price > 1000]
     fig = px.scatter_mapbox(price_data,
                         lon = 'longitude',
@@ -82,6 +100,10 @@ def luxury_location_price(data,token):
 
 
 def view_avail_location(data,token):
+    '''
+    Create a map that shows all the availability of listings and 
+    where they are in the map
+    '''
     available_data = data
     fig = px.scatter_mapbox(available_data,
                         lon = 'longitude',
@@ -95,6 +117,10 @@ def view_avail_location(data,token):
                     margin = {'l' : 0, 'r' : 0, 't' : 0, 'b' : 0})
 
 def min_nights5(data,token):
+    '''
+    Create a map that shows all the locations of the minimum nights
+    listing that are less than 5 nights
+    '''
     minimum_nights_data = data[data.minimum_nights < 5]
     fig = px.scatter_mapbox(minimum_nights_data,
                         lon = 'longitude',
@@ -107,6 +133,10 @@ def min_nights5(data,token):
     fig.update_layout(mapbox={'accesstoken' : token, 'center' : {'lon' : -117.063, 'lat': 32.765}, 'zoom':10.0},
                     margin = {'l' : 0, 'r' : 0, 't' : 0, 'b' : 0})
 def over_night5(data,token):
+    '''
+    Create a map that shows all the locations of the minimum nights
+    listing that are greater than 5 nights
+    '''
     minimum_nights_data = data[data.minimum_nights > 5]
     minimum_nights_data = minimum_nights_data[minimum_nights_data.minimum_nights < 35]
     fig = px.scatter_mapbox(minimum_nights_data,

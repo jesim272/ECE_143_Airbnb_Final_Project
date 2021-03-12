@@ -189,7 +189,7 @@ if __name__ == "__main__":
     '''
     This main function will stores and clean all that data under the 
     listing data folder and will create the trend's plot and the heat maps
-    necessary to make a investment decision for potential hosts
+    necessary to make a investment decision for potential host
     '''   
     # Separate file information for plotting the charts and heat maps
     listing_data_name = get_listing_data_name()
