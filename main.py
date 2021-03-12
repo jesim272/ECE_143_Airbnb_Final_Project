@@ -1,3 +1,6 @@
+########################################
+#            Libraries 
+########################################
 import os
 import numpy as np
 import pandas as pd
@@ -47,6 +50,10 @@ def find_index(array, dt):
             return i
 
 def get_listing_data_name():
+    '''
+    Iterating through the listing data and storing the 
+    files into a list
+    '''
     listing_data_path = './listing_data'
     listing_data_name = []
 
@@ -58,6 +65,9 @@ def get_listing_data_name():
     return listing_data_name
 
 def get_listing_data(listing_data_name):
+    '''
+    Clean the data and save in a new list
+    '''
     listing_data = [] # the list contains the pandas variable
     for file_name in listing_data_name:
         #data = pd.read_csv(file_name)
@@ -66,6 +76,10 @@ def get_listing_data(listing_data_name):
     return listing_data
 
 def get_time_line(listing_data_name):
+    '''
+    Creates a time line for all the data
+    This is will be used for plotting
+    '''
     num_data = 0 # total number of files
     date = [] # the datetime variable which restore the date
     date_array = None # The date_array, numpy array, restores the differnece of two dates
@@ -91,26 +105,34 @@ def get_time_line(listing_data_name):
     return price_array, cnt_array, date, date_array,num_data
 
 def get_variable():
-        room = {'Shared room':0, 'Hotel room':1, 'Entire home/apt':2, 'Private room':3} # room type dict  
-        # Loop for all data
-        for fname in listing_data_name:
-            data = pd.read_csv(fname)
-            dt = string_to_date(fname)
-            index = find_index(date, dt)
-            num = len(data)
-            for i in range(num):
-                price_array[index][room[data['room_type'][i]]] += data['price'][i]
-                cnt_array[index][room[data['room_type'][i]]] += 1
-                price_array[index][4] += data['price'][i]
-                cnt_array[index][4] += 1
-            for i in range(5):
-                if cnt_array[index][i] == 0:
-                    continue
-                price_array[index][i] /= cnt_array[index][i]
-        
-        return price_array,cnt_array
+    '''
+    Returning a price array and count array
+    This will be used for plotting
+    '''
+    room = {'Shared room':0, 'Hotel room':1, 'Entire home/apt':2, 'Private room':3} # room type dict  
+    # Loop for all data
+    for fname in listing_data_name:
+        data = pd.read_csv(fname)
+        dt = string_to_date(fname)
+        index = find_index(date, dt)
+        num = len(data)
+        for i in range(num):
+            price_array[index][room[data['room_type'][i]]] += data['price'][i]
+            cnt_array[index][room[data['room_type'][i]]] += 1
+            price_array[index][4] += data['price'][i]
+            cnt_array[index][4] += 1
+        for i in range(5):
+            if cnt_array[index][i] == 0:
+                continue
+            price_array[index][i] /= cnt_array[index][i]
+    
+    return price_array,cnt_array
     
 def avg_availablilty(listing_data_name,num_data):
+    '''
+    Get all the data under the "availability" column which
+    will be used to plot the availability trend
+    '''
     # Loop for all data
     room = {'Shared room':0, 'Hotel room':1, 'Entire home/apt':2, 'Private room':3} # room type dict
     avail_array = np.zeros((num_data, 5))
@@ -133,6 +155,10 @@ def avg_availablilty(listing_data_name,num_data):
     return date_array, avail_array
 
 def min_nights(listing_date_name,num_data):
+    '''
+    Get all the data under the "minimum nights" column which
+    will be used to plot the minimum nights trend
+    '''
     room = {'Shared room':0, 'Hotel room':1, 'Entire home/apt':2, 'Private room':3} # room type dict
     # Loop for all data
     minimum_night_array = np.zeros((num_data, 5))
@@ -155,9 +181,16 @@ def min_nights(listing_date_name,num_data):
 
     return date_array, minimum_night_array
 
+#######################################################
+#                    def MAIN ():
+#######################################################
 
-
-if __name__ == "__main__":      
+if __name__ == "__main__":   
+    '''
+    This main function will stores and clean all that data under the 
+    listing data folder and will create the trend's plot and the heat maps
+    necessary to make a investment decision for potential hosts
+    '''   
     # Separate file information for plotting the charts and heat maps
     listing_data_name = get_listing_data_name()
     listing_data = get_listing_data(listing_data_name)
@@ -180,7 +213,8 @@ if __name__ == "__main__":
     min_night(x_pos, y_pos,date_array, min_night_array)
 
     # Visualize all Location Maps
-    map_data  = create_location_map()
+    path_name  = './listing_data/listings_Dec_23_2020.csv'  # use any listing
+    map_data  = create_location_map(path_name)
     data, token = view_entire_location(map_data)
     #Visualize price < $300
     cheap_location_price(data,token)

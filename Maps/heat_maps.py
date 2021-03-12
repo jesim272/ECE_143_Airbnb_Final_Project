@@ -8,10 +8,7 @@ import plotly.offline as pyo
 import folium
 from folium.plugins import HeatMap
 
-def create_location_map():
-    #Use either 2015 or 2020 data for heat map.
-    map_data_path = './listing_data/listings_Dec_23_2020.csv'
-    # map_data_path = './listing_data/listings_Jun_22_2015.csv'
+def create_location_map(path_name):
     map_data = pd.read_csv(map_data_path)
     print(map_data['latitude'].min(), map_data['latitude'].max(), map_data['longitude'].min(), map_data['longitude'].max())
     return map_data
