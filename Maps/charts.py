@@ -12,6 +12,7 @@ def func(pct, allvals):
     input allvals: neighborhood names
     return: pr
     '''
+    assert isinstance(allvals,np.ndarray), "allvals not an np array"
     absolute = int(pct/100.*np.sum(allvals))
     return "{:1.1f}%\n({:d})".format(pct, absolute)
 
@@ -19,6 +20,7 @@ def view_neighbourhood_dist(data):
     '''
     Create a pie chart for the neighbourhood distribution
     '''
+    assert isinstance(data,pd.DataFrame), "data not an dataframe"    
     labels = data.neighbourhood.value_counts().index[0:10]
     shape = data.neighbourhood.value_counts().values[0:10]
     plt.figure(figsize=(12,12))
@@ -34,6 +36,7 @@ def view_price_distribution(data):
     Plot Price Distribution on top 10 region area
     Only use the data whose price is less than $1000
     '''
+    assert isinstance(data,pd.DataFrame), "data not an dataframe"
     price_data = data[data.price < 1000]
     labels = data.neighbourhood.value_counts().index[0:10]
     ten_top_neighbourhood = price_data.loc[data['neighbourhood'].isin(labels)]
@@ -49,6 +52,8 @@ def get_mini_pies(data):
     '''
     Plot room type proportion on all region area
     '''
+    assert isinstance(data,pd.DataFrame), "data not an dataframe"
+
     #set color
     colors = ['#16478E', '#0083BF', '#32C3EB', '#97D9EA']
     room_types=data.groupby(['neighbourhood', 'room_type']).size()

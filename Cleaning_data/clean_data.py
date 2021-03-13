@@ -10,6 +10,7 @@ def clean_data(file_name):
     Input: string with .csv file extension
     Output: Clean data frame
     '''
+    assert isinstance(file_name,str), "file_name is not a string"
     # Read the file
     df = pd.read_csv(file_name, encoding='utf-8')
     # Make the column names upper_case

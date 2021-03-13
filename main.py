@@ -27,6 +27,7 @@ def string_to_date(file_name):
     input param: file
     return: data time object
     '''
+    assert isinstance(file_name,str), "input is not a string"
     month_str_to_int = {'Jan':1, 'Feb':2, 'Mar':3, 'Apr':4, 
                         'May':5, 'Jun':6, 'Jul':7, 'Aug':8, 
                         'Sep':9, 'Oct':10,'Nov':11,'Dec':12}
@@ -44,6 +45,8 @@ def find_index(array, dt):
     input dt: datetime object
     return: index
     '''
+    assert isinstance(array, list), "array is not an array"
+    assert isinstance(dt, datetime.date), "dt is not datetime"
 
     for i in range(len(array)):
         if dt.__eq__(array[i]):
@@ -68,6 +71,7 @@ def get_listing_data(listing_data_name):
     '''
     Clean the data and save in a new list
     '''
+    assert isinstance(listing_data_name,list), "listinng_data_name not a list"
     listing_data = [] # the list contains the pandas variable
     for file_name in listing_data_name:
         #data = pd.read_csv(file_name)
@@ -80,6 +84,8 @@ def get_time_line(listing_data_name):
     Creates a time line for all the data
     This is will be used for plotting
     '''
+    assert isinstance(listing_data_name,list), "listinng_data_name not a list"
+
     num_data = 0 # total number of files
     date = [] # the datetime variable which restore the date
     date_array = None # The date_array, numpy array, restores the differnece of two dates
@@ -133,6 +139,8 @@ def avg_availablilty(listing_data_name,num_data):
     Get all the data under the "availability" column which
     will be used to plot the availability trend
     '''
+    assert isinstance(listing_data_name,list), "listinng_data_name not a list"
+    assert isinstance(num_data, int), "num_data not an int"
     # Loop for all data
     room = {'Shared room':0, 'Hotel room':1, 'Entire home/apt':2, 'Private room':3} # room type dict
     avail_array = np.zeros((num_data, 5))
@@ -159,6 +167,8 @@ def min_nights(listing_date_name,num_data):
     Get all the data under the "minimum nights" column which
     will be used to plot the minimum nights trend
     '''
+    assert isinstance(listing_data_name,list), "listinng_data_name not a list"
+    assert isinstance(num_data,int), "num_data is not an int"
     room = {'Shared room':0, 'Hotel room':1, 'Entire home/apt':2, 'Private room':3} # room type dict
     # Loop for all data
     minimum_night_array = np.zeros((num_data, 5))

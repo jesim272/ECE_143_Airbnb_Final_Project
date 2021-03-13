@@ -7,6 +7,11 @@ def price_plot(x_pos,y_pos,date_array, price_array):
     '''
     Plot the line plot for price changing:
     '''
+    assert isinstance(x_pos,int), "x_pos not an int"
+    assert isinstance(y_pos, int), "y_pos not an int"
+    assert isinstance(date_array,np.ndarray), "date array not np array"
+    assert isinstance(price_array,np.ndarray), "price array not np array"
+
     fig, ax = plt.subplots(1, figsize=(18, 15))# 18,10
     plt.title('Annual Trend of Room Pricing', fontsize=30)
     plt.xlabel('2015                        2016                        2017                        2018                        2019                        2020                        2021', fontsize=15)  
@@ -30,6 +35,11 @@ def avg_avail_plot(x_pos,y_pos,date_array,avail_array):
     '''
     Plot the line plot for price changing:
     '''
+    assert isinstance(x_pos,int), "x_pos not an int"
+    assert isinstance(y_pos, int), "y_pos not an int"
+    assert isinstance(date_array,np.ndarray), "date array not np array"
+    assert isinstance(avail_array,np.ndarray), "price array not np array"
+
     plt.figure(figsize=(18,15))
     plt.title('Annual Trend of Room Availability', fontsize=30)
     plt.xlabel('2015                        2016                        2017                        2018                        2019                        2020                        2021', fontsize = 15)  
@@ -51,6 +61,11 @@ def min_night(x_pos,y_pos,date_array, minimum_night_array):
     '''
     Plot the line plot for price changing:
     '''
+    assert isinstance(x_pos,int), "x_pos not an int"
+    assert isinstance(y_pos, int), "y_pos not an int"
+    assert isinstance(date_array,np.ndarray), "date array not np array"
+    assert isinstance(minimum_night_array,np.ndarray), "price array not np array"
+
     plt.figure(figsize=(18,15))
     plt.title('Annual Trend of Minimum Nights', fontsize=30)
     plt.xlabel('2015                        2016                        2017                        2018                        2019                        2020                        2021', fontsize = 15)  
